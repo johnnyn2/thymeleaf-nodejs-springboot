@@ -35,7 +35,3 @@ build/
 ### frontend node_mobules
 /node_modules/
 package-lock.json
-
-### compiled static resources and html templates
-/src/main/resources/static/**
-/src/main/resources/templates/**

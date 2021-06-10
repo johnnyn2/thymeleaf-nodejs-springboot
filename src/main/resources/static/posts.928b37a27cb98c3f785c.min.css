@@ -1,0 +1,1 @@
+.flex-container{display:flex;flex-direction:column}.flex-container:first-child{margin-bottom:20px}.flex-container div,.post{display:flex}.post{border:1px solid #000;border-radius:20px;flex-direction:column;padding:20px;width:400px}.row{display:flex}
