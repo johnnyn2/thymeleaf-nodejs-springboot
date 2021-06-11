@@ -82,7 +82,7 @@ function Index () {
         />
       </div>
       <Typography variant="h1" component="h2">{total}</Typography>
-      <Button variant="contained" color="primary" onClick={() => sum()}>Sumfdsfsdf</Button>
+      <Button variant="contained" color="primary" onClick={() => sum()}>Sum</Button>
       <div><a href="/posts">Post.html</a></div>
       <img src={heading} />
       <Chatroom />

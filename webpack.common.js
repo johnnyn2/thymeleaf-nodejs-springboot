@@ -1,9 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const fs = require('fs');
 const baseUrl = './src/main/resources/webapp/src';
 const staticResourcesUrl = './src/main/resources/static';
 
@@ -64,11 +62,11 @@ module.exports = {
       filename: '../templates/posts.html',
       publicPath: '/',
     }),
-    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     publicPath: '',
-    path: path.resolve(__dirname, staticResourcesUrl)
+    path: path.resolve(__dirname, staticResourcesUrl),
+    clean: true
   }
 }
